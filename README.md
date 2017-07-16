@@ -1,5 +1,6 @@
 # python-opencv-bulds
 This repository contains opencv builds for Python2 and Python3 for Ubuntu.
+OpenCV version = 3.2.0
 
 How to use :
 1.For Python2,copy cv2.so file to your python's library location ,either to dist-packages or site-pacckages .Examaple : /usr/local/lib/python2.7/dist-packages/ 
