@@ -30,8 +30,13 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 1.For Python3,copy cv2.cpython-35m-x86_64-linux-gnu.so file to your python's library location ,either to dist-packages or site-packages .Examaple : /usr/local/lib/python3.5/dist-packages/ 
 
-Yo can do the same even when you are using virtualenv,you just need to copy cv2.so to your currently activated environment python's library location.For example my activated virtualenv is cv then ,you need to change you working directory  and then copy cv2.cpython-35m-x86_64-linux-gnu.so file to this directory :
+Yo can do the same even when you are using virtualenv,you just need to copy cv2.so to your currently activated environment python's library location.For example my activated virtualenv is cv then ,you need to change you working directory  and  then copy cv2.cpython-35m-x86_64-linux-gnu.so file to this directory :
 cd  ~/.virtualenvs/cv/lib/python3.5/dist-packages/
+# if you are copying  cv2.cpython-35m-x86_64-linux-gnu.so to site-pacakges folder of your python library,then just rename cv2.cpython-35m-x86_64-linux-gnu.so to cv2.so first  and then copy the file to site-packages.This is required .
+
+
+
+
 
 
 Note : cv2.cpython-35m-x86_64-linux-gnu.so has been built by me with these options
