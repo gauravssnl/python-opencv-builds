@@ -1,5 +1,5 @@
 # python-opencv-builds
-This repository contains opencv builds for Python2 and Python3 for Ubuntu.
+This repository contains opencv builds for Python2 and Python3 for Ubuntu/Linux
 
 OpenCV version = 3.2.0
 
