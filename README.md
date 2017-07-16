@@ -13,7 +13,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D CMAKE_INSTALL_PREFIX=/usr/local \
     -D INSTALL_PYTHON_EXAMPLES=ON \
     -D INSTALL_C_EXAMPLES=OFF \
-    -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.2.0/modules \
+    -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.2.0/modules
     -D PYTHON_EXECUTABLE=~/usr/bin/python
     -D BUILD_EXAMPLES=ON ..
     
