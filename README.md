@@ -56,7 +56,7 @@ cd ..
 
 ```
 
-# set your python executable for which  you want to install cv2 by setting  PYTHON_EXECUTABLE option & set D INSTALL_C_EXAMPLES=ON to install C examples 
+### set your python executable for which  you want to install cv2 by setting  PYTHON_EXECUTABLE option & set D INSTALL_C_EXAMPLES=ON to install C examples 
 
 ```code
 
