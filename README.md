@@ -91,14 +91,13 @@ find /usr/local/lib/ -type f -name "cv2*.so"
 # Python2 
 
 1.Change your directory to python/virtualenv site-packages folder :
-
+```code
 cd /home/gauravssnl/.pyenv/versions/py2/lib/python2.7/site-packages
-
+```
 2. create symbolic link for cv2.so
-
+```code
 ln -s /usr/local/lib/python2.7/dist-packages/cv2.so cv2.so
-
-
+```
 
 
 Note : cv2.so has been built by me with these options
@@ -121,13 +120,14 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 # Python3
 
 1.Change your directory to python/virtualenv site-packages folder :
-
+```code
 cd /home/gauravssnl/.pyenv/versions/py3/lib/python3.7/site-packages
+```
 
 2. create symbolic link for cv2.so
-
+```code
 ln -s /usr/local/lib/python3.6/dist-packages/cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
-
+```
 
 
 Note : cv2.cpython-35m-x86_64-linux-gnu.so has been built by me with these options
