@@ -54,7 +54,11 @@ cd opencv_contrib
 git checkout 3.4.1
 cd ..
 
+```
+
 # set your python executable for which  you want to install cv2 by setting  PYTHON_EXECUTABLE option & set D INSTALL_C_EXAMPLES=ON to install C examples 
+
+```code
 
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
       -D CMAKE_INSTALL_PREFIX=/usr/local \
