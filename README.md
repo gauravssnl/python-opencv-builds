@@ -46,14 +46,15 @@ pip install numpy scipy matplotlib scikit-image scikit-learn ipython
 
 git clone https://github.com/opencv/opencv.git
 cd opencv 
-git checkout 3.3.1 
+git checkout 3.4.1 
 cd ..
 
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv_contrib
-git checkout 3.3.1
+git checkout 3.4.1
 cd ..
 
+# set your python executable for which  you want to install cv2 by setting  PYTHON_EXECUTABLE option & set D INSTALL_C_EXAMPLES=ON to install C examples 
 
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
       -D CMAKE_INSTALL_PREFIX=/usr/local \
@@ -85,10 +86,15 @@ find /usr/local/lib/ -type f -name "cv2*.so"
 
 # Python2 
 
-1.For Python2,copy cv2.so file to your python's library location ,either to dist-packages or site-packages .Examaple : /usr/local/lib/python2.7/dist-packages/ 
+1.Change your directory to python/virtualenv site-packages folder :
 
-Yo can do the same even when you are using virtualenv,you just need to copy cv2.so to your currently activated environment python's library location.For example my activated virtualenv is cv then ,you need to change you working directory  and then copy cv2.so file to this directory :
-cd  ~/.virtualenvs/cv/lib/python2.7/dist-packages/
+cd /home/gauravssnl/.pyenv/versions/py2/lib/python2.7/site-packages
+
+2. create symbolic link for cv2.so
+
+ln -s /usr/local/lib/python2.7/dist-packages/cv2.so cv2.so
+
+
 
 
 Note : cv2.so has been built by me with these options
@@ -110,14 +116,13 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     
 # Python3
 
-1.For Python3,copy cv2.cpython-35m-x86_64-linux-gnu.so file to your python's library location ,either to dist-packages or site-packages .Examaple : /usr/local/lib/python3.5/dist-packages/ 
+1.Change your directory to python/virtualenv site-packages folder :
 
-Yo can do the same even when you are using virtualenv,you just need to copy cv2.so to your currently activated environment python's library location.For example my activated virtualenv is cv then ,you need to change you working directory  and  then copy cv2.cpython-35m-x86_64-linux-gnu.so file to this directory :
-cd  ~/.virtualenvs/cv/lib/python3.5/dist-packages/
-# if you are copying  cv2.cpython-35m-x86_64-linux-gnu.so to site-pacakges folder of your python library,then just rename cv2.cpython-35m-x86_64-linux-gnu.so to cv2.so first  and then copy the file to site-packages.This is required .
+cd /home/gauravssnl/.pyenv/versions/py3/lib/python3.7/site-packages
 
+2. create symbolic link for cv2.so
 
-
+ln -s /usr/local/lib/python3.6/dist-packages/cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
 
 
 
