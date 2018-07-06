@@ -1,10 +1,11 @@
 # python-opencv-builds
 This repository contains opencv builds for Python2 and Python3 for Ubuntu/Linux
 
-OpenCV version = 3.2.0
+OpenCV version = 3.4.1
 
-How to use :
-'code
+Use thse commands  
+
+```code
 
 sudo apt-get update
 sudo apt-get upgrade
@@ -66,17 +67,21 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
        -D PYTHON_EXECUTABLE=/usr/bin/python3 \
       -D BUILD_EXAMPLES=ON ..
       
+
 # find out number of CPU cores in your machine
 nproc
+
 # substitute 4 by output of nproc
 make -j4
+
 sudo make install
 sudo sh -c 'echo "/usr/local/lib" >> /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
 
+# Find cv2.so files 
 find /usr/local/lib/ -type f -name "cv2*.so"
 
-'
+```
 
 # Python2 
 
